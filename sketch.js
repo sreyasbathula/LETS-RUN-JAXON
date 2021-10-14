@@ -17,13 +17,13 @@ function setup(){
   Runner=createSprite(190,300,10,10);
   Runner.addAnimation("running",RunnerImg1);
   Runner.scale=0.06
-
+  
 
 
   
+
+  
 }
-
-
  
     
   
@@ -33,10 +33,13 @@ function setup(){
 
 
 function draw() {
+  Runner.x = World.mouseX;
+  
    //code to reset the background
    if (path.y> 400) {
     path.y = height/8;
    }
+  
   background(0);
 drawSprites();
 }
